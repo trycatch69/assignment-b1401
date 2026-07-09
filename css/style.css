@@ -1,0 +1,490 @@
+
+/* =====================================================
+   Google Fonts
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* =====================================================
+   Reset
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    line-height:1.6;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul,
+ol{
+    list-style:none;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    background:none;
+}
+
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+/* =====================================================
+   Base Styles
+===================================================== */
+
+.container{
+    /* width:100%;
+    max-width:1140px;
+    margin:auto;
+    padding:0 20px; */
+}
+
+.section{
+    /* padding:120px 0; */
+}
+
+/* =====================================================
+   Button System
+===================================================== */
+
+.btn{
+    display:inline-block;
+    padding:12px 41px;
+    border-radius:10px;
+    font-weight:700;
+    transition:var(--transition);
+}
+
+.btn-primary{
+    background-color:#2563EB;
+    color:#fff;
+}
+
+.btn-outline{
+    border:2px solid;
+    padding:11px 106px;
+}
+
+
+.btn:hover{
+    opacity:.9;
+}
+
+/* =====================================================
+   Navigation Styles
+===================================================== */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:26px 120px;
+}
+
+nav ul{
+    display:flex;
+    gap: 24px;
+}
+
+nav ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    color: #575757;;
+}
+
+/* =====================================================
+   Hero Styles
+===================================================== */
+
+.hero{
+    /* width: 100%;
+    min-height: 100vh; */
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/banner.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 58px;
+    padding-top: 136px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    font-style: italic;
+}
+
+.hero p {
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    padding-top: 10px;
+    margin-bottom: 278px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.hero button {
+    padding:25px 62px;
+    margin-bottom: 80px;
+}
+
+/* =====================================================
+   Speakers Styles
+===================================================== */
+
+.speakers
+{
+    padding:80px 120px;
+}
+
+.speakers h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 58px;
+    text-align: center;
+    color: #000102;
+    margin-bottom: 57px;
+}
+
+.speakers-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+[class^="speakers-grid-"] {
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+
+[class^="speakers-grid-"] img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0px;
+}   
+
+.speakers-content {
+    padding: 24px;
+}
+
+.speakers-content h4 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2563EB;
+    margin-bottom: 8px;
+}
+
+.speakers-content h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #0D1B2A;
+    margin-bottom: 8px;
+}
+
+.speakers-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #575757;
+}
+
+/* =====================================================
+   Pricing Styles
+===================================================== */
+
+.pricing{
+    padding:170px 120px;
+    text-align: center;
+}
+
+.pricing h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0D1B2A;
+    margin-bottom: 12px;
+}
+
+.pricing p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #575757;
+    margin-bottom: 70px;
+}
+
+.pricing-card {
+    display:flex;
+    justify-content:center;
+    gap:24px;
+}
+
+[class^="pricing-card-"] {
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+[class^="pricing-card-"] button {
+    margin-top: 20px;
+}
+
+
+.card-price h4, p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+.card-price h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    color: #0D1B2A;
+    margin-bottom: 5px;
+}
+
+.divider {
+    border: 1px solid #E5E7EB;
+    margin: 20px 0;
+}
+
+
+.package-list {
+    padding-left: 15px;
+}
+.package-list li {
+    text-align: left;
+    list-style-type: disc;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* color: #333333; */
+    margin-bottom: 10px;
+}
+
+li::marker{
+    color: #2563EB;
+}
+
+.pricing-card-pro {
+    background-color: #0e1b2b
+}
+
+.pricing-card-pro li {
+    color: #9a9898;
+}
+
+.btn-standard {
+    color: #2563EB;
+}
+
+.btn-team {
+   color: #0D1B2A; 
+}
+
+.btn-pro{
+    border: none;
+    background: #2563EB;
+    color: #fff;
+}
+
+.pricing-card-pro  h4{
+    color: #93C5FD;
+}
+
+.pricing-card-pro h1{
+    color: #FFFFFF;
+}
+
+.divider-pro {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+/* =====================================================
+   Footer Styles
+===================================================== */
+
+.footer{
+    background:#0D1B2A;
+    padding:80px 120px 0 120px;
+}
+
+.footer-top{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+.footer-logo img{
+    width:180px;
+    display:block;
+}
+
+.footer-social{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.footer-social a{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:50%;
+    transition:.3s;
+}
+
+.footer-social img{
+    width:22px;
+}
+
+.footer-social a:hover{
+    background:#7C3AED;
+    border-color:#7C3AED;
+    transform:translateY(-4px);
+}
+
+.footer-divider{
+    width:100%;
+    height:1px;
+    background:rgba(255,255,255,.15);
+    margin:50px 0 35px;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    color:rgba(255,255,255,.7);
+    font-size:16px;
+}
+
+.footer-menu{
+    display:flex;
+    gap:28px;
+    list-style:none;
+}
+
+.footer-menu a{
+    color:rgba(255,255,255,.4);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-menu a:hover{
+    color:#7C3AED;
+}
+
+/* ===================================
+Why DevConf
+=================================== */
+
+.why-devconf{
+    padding:100px 120px;
+    background:#0F172A;
+}
+
+.section-heading{
+    max-width:700px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.section-heading h2{
+    font-size:48px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.section-heading p{
+    color:rgba(255,255,255,.7);
+    font-size:18px;
+    line-height:1.7;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.feature-card{
+    background:#1E293B;
+    padding:40px 30px;
+    border-radius:16px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    border-color:#7C3AED;
+}
+
+.feature-icon{
+    font-size:50px;
+    margin-bottom:25px;
+}
+
+.feature-card h3{
+    color:#fff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.feature-card p{
+    color:rgba(255,255,255,.7);
+    line-height:1.7;
+}
