@@ -10,23 +10,8 @@ Section: Why Developers Choose DevConf 2026
 
             Why Developers Choose DevConf 2026
 
-      Learn. Build. Connect. Grow.
-
 ------------------------------------------------------------
 
-[ AI Workshops ]     [ Networking ]      [ Career Fair ]
-
- Hands-on AI         Meet developers     Top tech companies
- workshops           from 30+ countries  hiring on-site
-
-------------------------------------------------------------
-
-[ Live Coding ]      [ Startup Expo ]    [ Hackathon ]
-
- Watch experts       Discover new        Win prizes worth
- build projects      startups            $20,000+
-
-------------------------------------------------------------
 HTML Code: 
 <section class="why-devconf">
     <div class="container">
